@@ -61,30 +61,7 @@ window.onbeforeunload = () => {
   window.scrollTo(0, 0)
 }
 
-// Form Submission
-const contactForm = document.getElementById("contactForm")
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-
-    // Get form values
-    const name = document.getElementById("name").value
-    const email = document.getElementById("email").value
-    const subject = document.getElementById("subject").value
-    const message = document.getElementById("message").value
-
-    // Here you would typically send the form data to a server
-    // For demonstration, we'll just log it and show an alert
-    console.log("Form submitted:", { name, email, subject, message })
-
-    // Show success message
-    alert("Merci pour votre message ! Je vous répondrai dès que possible.")
-
-    // Reset form
-    contactForm.reset()
-  })
-}
 
 // Skill bar animation on scroll
 const skillBars = document.querySelectorAll(".skill-progress")
